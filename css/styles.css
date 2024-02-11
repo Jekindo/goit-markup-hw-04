@@ -306,34 +306,20 @@ ul {
   flex-basis: calc((100% - 3 * var(--grid-column-gap)) / 4);
 }
 
-.feature-list > .item::before {
-  content: "";
-
-  display: block;
+.feature-list .thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
   margin-bottom: 8px;
 
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24.24%;
 }
 
-.icon-antena::before {
-  background-image: url(../images/icons/antena.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/icons/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/icons/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/icons/astronaut.svg);
+.feature-list .icon {
+  width: 64px;
+  height: 64px;
 }
 
 /* Team */
