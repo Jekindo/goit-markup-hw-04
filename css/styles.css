@@ -90,6 +90,9 @@ ul {
 /* Page header */
 .page-header {
   border-bottom: 1px solid var(--accent-color);
+
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header > .inner {
@@ -162,11 +165,15 @@ ul {
   color: var(--pressed-state-color);
 }
 
+.site-nav .link.is-active {
+  color: var(--pressed-state-color);
+}
+
 .site-nav .link.is-active::after {
   content: "";
 
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 
   display: block;
