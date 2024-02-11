@@ -405,7 +405,7 @@ ul {
   overflow: hidden;
 }
 
-.work-list .overlay {
+.work-list .overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -416,6 +416,7 @@ ul {
   padding: 40px 32px;
 
   background-color: var(--primary-brand-color);
+  color: var(--light-color);
 
   overflow-y: auto;
 
@@ -425,13 +426,9 @@ ul {
     opacity 250ms var(--timing-function);
 }
 
-.work-list > .item:hover .overlay {
+.work-list > .item:hover .overlay-text {
   transform: translateY(0);
   opacity: 1;
-}
-
-.work-list .overlay-text {
-  color: var(--light-color);
 }
 
 .work-list .content {
