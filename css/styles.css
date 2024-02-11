@@ -448,7 +448,21 @@ ul {
 
 .page-footer .row {
   display: flex;
-  column-gap: 120px;
+  align-items: baseline;
+}
+
+.page-footer .promo {
+  margin-right: 120px;
+}
+
+.page-footer .logo {
+  margin-bottom: 16px;
+}
+
+.page-footer .text {
+  max-width: 264px;
+
+  color: var(--light-color);
 }
 
 .page-footer .action-call {
@@ -460,12 +474,11 @@ ul {
   color: var(--light-color);
 }
 
-.page-footer .logo {
-  margin-bottom: 16px;
+.page-footer .social-icons {
+  gap: 16px;
 }
 
-.page-footer .text {
-  max-width: 264px;
-
-  color: var(--light-color);
+.page-footer .social-icons .link:hover,
+.page-footer .social-icons .link:focus {
+  background-color: var(--success-color);
 }
