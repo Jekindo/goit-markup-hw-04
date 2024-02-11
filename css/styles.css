@@ -313,13 +313,9 @@ ul {
   height: 112px;
   margin-bottom: 8px;
 
+  background-color: var(--light-color);
   border: 1px solid var(--border-color);
   border-radius: 4px;
-}
-
-.feature-list .icon {
-  width: 64px;
-  height: 64px;
 }
 
 /* Team */
@@ -345,7 +341,7 @@ ul {
 }
 
 .team-list .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-list .text {
@@ -355,7 +351,8 @@ ul {
 /* Social icons */
 .social-icons {
   display: flex;
-  column-gap: var(--grid-column-gap);
+  justify-content: center;
+  gap: var(--grid-column-gap);
 }
 
 .social-icons .link {
