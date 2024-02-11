@@ -16,6 +16,7 @@
   --modal-background-color: #fcfcfc;
   --page-title-color: #ffffff;
   --btn-text-color: #ffffff;
+  --footer-text-color: #ffffff;
 
   --grid-column-gap: 24px;
   --grid-row-gap: 48px;
@@ -421,14 +422,11 @@ ul {
   overflow-y: auto;
 
   transform: translateY(100%);
-  opacity: 0;
-  transition: transform 250ms var(--timing-function),
-    opacity 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
 }
 
 .work-list > .item:hover .overlay-text {
   transform: translateY(0);
-  opacity: 1;
 }
 
 .work-list .content {
@@ -462,7 +460,7 @@ ul {
 .page-footer .text {
   max-width: 264px;
 
-  color: var(--light-color);
+  color: var(--footer-text-color);
 }
 
 .page-footer .action-call {
