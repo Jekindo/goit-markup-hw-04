@@ -460,7 +460,7 @@ ul {
 .page-footer .text {
   max-width: 264px;
 
-  color: var(--);
+  color: var(--light-color);
 }
 
 .page-footer .action-call {
